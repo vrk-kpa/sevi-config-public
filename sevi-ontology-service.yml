@@ -1,0 +1,19 @@
+service:
+  name: sevi-ontology-service
+
+server:
+  port: 9089
+  contextPath: /sevi-ontology-service
+
+session:
+  timeout-mins: 10
+
+sevi_commons_cache_redis_host: redis
+sevi_commons_cache_redis_port: 6379
+sevi_commons_cache_redis_db_index: 2
+
+ontology:
+  finto:
+    # Kaikki käytetyt ontologiat ja luokitukset, tallennetaan yhteen Jena-TDB-kantaan.
+    ontology-urls: https://www.w3.org/2009/08/skos-reference/skos.rdf,http://api.finto.fi/download/jupo/jupo-skos.ttl,http://api.finto.fi/download/yso/yso-skos.ttl,http://api.finto.fi/download/liito/liito-skos.ttl,http://api.finto.fi/download/juho/juho-skos.ttl,http://api.finto.fi/download/tero/tero-skos.ttl,http://api.finto.fi/download/tsr/tsr-skos.ttl,http://api.finto.fi/download/ptvl/ptvl-skos.ttl
+

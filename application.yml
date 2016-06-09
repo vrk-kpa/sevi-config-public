@@ -1,0 +1,8 @@
+environment:
+  amq:
+    host: activemq
+    port: 61616
+  fuseki:
+    host: fuseki
+    port: 3030
+
